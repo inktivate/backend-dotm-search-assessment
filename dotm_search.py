@@ -13,8 +13,8 @@ import os
 
 if __name__ == "__main__":
     search_text = sys.argv[1]
-    if len(sys.argv) > 2:
-        dotm_directory = sys.argv[2]
+    if len(sys.argv) > 3 and sys.argv[2] == '--dir':
+        dotm_directory = sys.argv[3]
     else:
         dotm_directory = os.path.dirname(os.path.realpath(__file__))
 
